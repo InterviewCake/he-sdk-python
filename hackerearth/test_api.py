@@ -20,11 +20,11 @@ api = HackerEarthAPI(params)
 
 print('Compiling code..')
 r = api.compile()
-# print(r.__dict__) If something breaks, uncomment this
+print(r.__dict__)
 
 print('\nRunning code...')
 r = api.run()
-# print(r.__dict__) If something breaks, uncomment this
+print(r.__dict__)
 output = r.__dict__.get('output')
 
 print('\nRun Output:')
