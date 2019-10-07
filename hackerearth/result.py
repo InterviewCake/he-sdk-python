@@ -1,5 +1,6 @@
 import json
 
+
 class BaseAPIResult(object):
     """Represents a response from the HackerEarth API.
     """
@@ -44,7 +45,7 @@ class RunResult(BaseAPIResult):
         key/value pairs.
         """
         flattened_dict = {}
-        for (key, value) in dict_.iteritems():
+        for (key, value) in dict_.items():
             if isinstance(value, dict):
                 flattened_dict.update(self._flatten_dict(value))
             else:

@@ -1,6 +1,6 @@
 import json
 import urllib
-import urllib2
+# import urllib2
 import requests
 
 from settings import COMPILE_API_ENDPOINT
@@ -37,8 +37,8 @@ class HackerEarthAPI(object):
         response = None
         try:
             response = requests.post(url, data=params)
-        except Exception, e:
-            print e
+        except Exception as e:
+            print(e)
         return response
 
 

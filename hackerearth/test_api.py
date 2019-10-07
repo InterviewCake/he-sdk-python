@@ -6,7 +6,7 @@ from parameters import RunAPIParameters
 
 from api_handlers import HackerEarthAPI
 
-client_secret = '0a7f0101e5cc06e4417a3addeb76164680ac83a4'
+client_secret = ''
 
 source = open('test_source.py', 'r').read()
 lang = SupportedLanguages.PYTHON
@@ -18,14 +18,15 @@ params = RunAPIParameters(
 
 api = HackerEarthAPI(params)
 
-print 'Compiling code..'
+print('Compiling code..')
 r = api.compile()
-print r.__dict__
+# print(r.__dict__) If something breaks, uncomment this
 
-print '\nRunning code...'
+print('\nRunning code...')
 r = api.run()
-print r.__dict__
+# print(r.__dict__) If something breaks, uncomment this
 output = r.__dict__.get('output')
 
-print '\nRun Output:'
-print output
+print('\nRun Output:')
+print(output)
+# print('Process Complete!')
