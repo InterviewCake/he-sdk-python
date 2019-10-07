@@ -11,8 +11,7 @@ CLASSIFIERS = [
     'Intended Audience :: Developers',
     'Topic :: Internet',
     'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 2.6',
-    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3.7',
     ]
 
 setup(name='he-sdk-python',
@@ -24,5 +23,5 @@ setup(name='he-sdk-python',
       license='MIT',
       packages=['hackerearth'],
       classifiers=CLASSIFIERS,
-      keywords='hackerarth code cheker api python client'
+      keywords='hackerarth code cheker api python client', install_requires=['requests']
       )
