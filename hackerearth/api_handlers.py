@@ -1,6 +1,5 @@
 import json
 import urllib
-# import urllib2
 import requests
 
 from settings import COMPILE_API_ENDPOINT
