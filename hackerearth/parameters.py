@@ -1,4 +1,4 @@
-import settings
+import he_settings
 
 
 class InvalidParameterException(Exception):
@@ -88,8 +88,8 @@ class CompileAPIParameters(BaseAPIParameters):
 class RunAPIParameters(CompileAPIParameters):
     def __init__(self, client_secret, source, lang,
                  program_input=None,
-                 time_limit=settings.RUN_TIME_UPPER_LIMIT,
-                 memory_limit=settings.MEMORY_UPPER_LIMIT,
+                 time_limit=he_settings.RUN_TIME_UPPER_LIMIT,
+                 memory_limit=he_settings.MEMORY_UPPER_LIMIT,
                  asyncron = 0,
                  id=None,
                  save=1,
@@ -107,8 +107,8 @@ class RunAPIParameters(CompileAPIParameters):
         self.asyncron = asyncron
         self.html = html
         self.compiled = compiled
-        self.time_limit = min(time_limit, settings.RUN_TIME_UPPER_LIMIT)
-        self.memory_limit = min(memory_limit, settings.MEMORY_UPPER_LIMIT)
+        self.time_limit = min(time_limit, he_settings.RUN_TIME_UPPER_LIMIT)
+        self.memory_limit = min(memory_limit, he_settings.MEMORY_UPPER_LIMIT)
         print (self.memory_limit)
 
     def _build_params_dict(self):
