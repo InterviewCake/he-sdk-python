@@ -2,9 +2,9 @@ import json
 import urllib
 import requests
 
-from he_settings import COMPILE_API_ENDPOINT
-from he_settings import RUN_API_ENDPOINT
-from he_settings import CLIENT_SECRET
+from settings import COMPILE_API_ENDPOINT
+from settings import RUN_API_ENDPOINT
+from settings import CLIENT_SECRET
 
 from result import CompileResult
 from result import RunResult
