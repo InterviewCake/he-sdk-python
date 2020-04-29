@@ -1,4 +1,4 @@
-import settings
+import .settings
 
 
 class InvalidParameterException(Exception):
